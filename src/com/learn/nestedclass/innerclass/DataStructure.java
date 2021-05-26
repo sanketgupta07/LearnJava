@@ -1,6 +1,6 @@
 /**
  * Example of Inner Class
- * Implement a data structure to print even valve of an int array.
+ * Implement a Class {@link com.learn.nestedclass.innerclass.DataStructure} to print even valve of an int array.
  */
 
 package com.learn.nestedclass.innerclass;
@@ -24,6 +24,9 @@ public class DataStructure {
 
     interface DataStructureIterator extends Iterator<Integer>{}
 
+    /**
+     * This inner class will work as a helper class for {@link DataStructure}
+     */
     private class EvenIterator implements DataStructureIterator{
         private int nextIndex = 0;
         @Override
